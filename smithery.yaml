@@ -1,0 +1,16 @@
+# Smithery 远程 MCP 服务器配置（草稿，提交时以 smithery.ai 当期表单/校验为准）
+# 服务为远程 Streamable HTTP，无需本地安装。
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: "SafeSellAI API Key（可选）：留空 = 免注册试用（文字排查 100 词/天/IP）；填写后解锁全部工具。在 https://safesellai.com 账号设置中创建。"
+  exampleConfig:
+    apiKey: ""
+# 远程端点信息（Smithery 远程服务器登记时填写）
+# url: https://safesellai.com/mcp
+# transport: streamable-http
+# auth header: Authorization: Bearer <apiKey>（可选）
